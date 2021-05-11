@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container-fluid mainMenu">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <i class="bi bi-brightness-alt-high"></i>
+                WeatherApp
+                <i class="bi bi-brightness-alt-high"></i>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item ms-4">
+                    <a class="nav-link active" aria-current="page" href="/"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item ms-4">
+                    <a class="nav-link" href="/weather">Weather</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!--banner-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto d-flex">
+          <div class="col-md-6 col-12 lhsSide">
+            <p class="fs-3">Here is the weather app</p>
+            <h1 class="weatherFont mt-1 mb-5">
+              Get the latest <span class="weatherSpan">Weather</span> info of
+              your City
+            </h1>
+            <a href="/weather"
+              ><button class="fs-4 weatherBtn">Check Now</button></a
+            >
+          </div>
+          <div class="col-md-6 col-12 rhsSide">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./images/bgImg.png"
+                    class="d-block w-100"
+                    alt="./"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/bgImg.png"
+                    class="d-block w-100"
+                    alt="./"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/bgImg.png"
+                    class="d-block w-100"
+                    alt="./"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer class="w-100 mt-auto">
+      <p class="m-0">copyright@2021WeatherApp</p>
+    </footer>
+  </body>
+</html>

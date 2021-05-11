@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>head}} 
+</head>
+  <body>
+    {{>navbar}}
+
+    <!--banner-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          
+          <div class="formDiv">
+            <form class="formContent">
+              <input type="text" id="cityName" placeholder="Enter your City name" class="fs-4 fw-bold text-white"> 
+              <input type="submit" id="submitBtn" value="Search" class="p-2 fs-2">
+            </form> 
+          </div>
+
+          <div class="boxDiv m-auto mb-5">
+            <div class="topPart w-100 justify-content-between align-self-center fs-5">
+              <p class="my-4 mx-5 text-white" id="day">Day</p>
+              <p class="my-4 mx-5 text-white">
+                <span id="todayDate">Date</span>
+                <span id="todayMonth">Month</span>
+              </p>
+            </div>
+            <div class="bottomPart w-100 d-flex flex-column">
+              <p class="boxCityNameC text-white fs-1 px-5 pt-4 mx-auto" id="boxCityName">City</p>
+              <div class="mainBottomPart dataHide justify-content-around fw-bold text-white mb-5" id="mainBottomPartID">
+                <p>
+                  <span id="temp">temp</span>
+                  <sup>o</sup>C
+                </p>
+                <p id="tempStatus"><i class="bi bi-cloud"></i></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    {{>footer}}
+
+    <script src="app.js"></script>
+  </body>
+</html>
